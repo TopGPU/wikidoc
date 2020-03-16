@@ -1,17 +1,5 @@
-# Welcome to MkDocs
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+1. gpu租用使用dbc按租用时长进行支付，提前结束订单会返回未使用时长对应的dbc数量到支付钱包。dbc购买方式见[链接](https://www.dbchain.ai/howBuy),支持支付宝购买,可以开发票。
+2. gpu出租的价格由服务器拥有者自由定价,根据服务器的配置不同(如cpu核数、内存大小、磁盘是否是ssd等),同一种gpu在不同服务器价格会有略微差别。
+3. 服务器登录方式：支持 ssh 和 jupyter 登录。 在确认支付dbc进行gpu租赁后,将会收到支付邮件, 邮件中包含两种登录方式的链接和密码。通过本地电脑终端(如mac电脑上的iTerm、Windows上的Xshell、PyCharm编辑器等)进行ssh登录，或使用浏览器访问jupyter链接进行登录。
+4. 代码和训练数据上传、模型下载: 提供私人网盘,通过浏览器打开网盘链接,可以选中本地文件上传到服务器。私人网盘链接和密码也在租赁邮件中。也可以通过Xshell自带的文件上传功能、OneDrive(国内速度较慢)等工具上传文件到服务器。
+5. 服务器环境: 服务器操作系统在gpu租赁页面有显示,大部分为Ubuntu 16.04.5, ssh登录后的环境为基于该操作系统上的docker容器,对应的docker镜像由dbc统一发布。镜像中配有python367、pytorch1.1、TensorFlow 1.14等深度学习使用软件，具体版本可能因镜像升级而不同,以租赁邮件中显示的为准。请仔细阅读租用邮件,登录后切换合适的开发环境进行使用。
