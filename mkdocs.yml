@@ -1,6 +1,6 @@
-site_name: My Docs
+site_name: TopGPU Wikidoc
 nav:
-    - Home: index.md
-    - First: first.md
+    - 主页: index.md
+    - SSH登录: remotessh.md
 theme:
   name: 'material'
