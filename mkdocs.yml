@@ -3,5 +3,6 @@ nav:
     - 主页: index.md
     - SSH登录: remotessh.md
     - Anaconda环境管理: anaconda.md
+    - 一些常见问题: question.md
 theme:
   name: 'material'
